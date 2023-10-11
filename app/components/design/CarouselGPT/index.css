@@ -1,0 +1,9 @@
+.carousel-container {
+    overflow: hidden;
+    width: 300px; /* Ajuste conforme necessário */
+}
+
+.carousel {
+    display: flex;
+    width: 1000px; /* Largura deve ser maior que a do container */
+}

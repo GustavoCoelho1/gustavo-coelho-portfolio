@@ -1,0 +1,30 @@
+@keyframes scroll {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -120%;
+    }
+}
+
+@keyframes scrollMobile {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -275%;
+    }
+}
+
+.child {
+    width: 240%;
+    animation: scroll 15s linear infinite;
+    @apply absolute left-0 flex items-center justify-around;
+}
+
+@media (max-width: 1024px) {
+    .child {
+        width: 550%;
+        animation: scrollMobile 15s linear infinite;
+    }
+}

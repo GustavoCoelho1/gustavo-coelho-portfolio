@@ -1,0 +1,9 @@
+.container {
+    --mask: radial-gradient(79.26px at 50% 110.25px, #000 99%, #0000 101%)
+            calc(50% - 90px) 0/180px 100%,
+        radial-gradient(79.26px at 50% -65.25px, #0000 99%, #000 101%) 50% 45px/180px
+            100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    @apply h-full w-full bg-gradient-to-b from-black to-[#0b0016];
+}
