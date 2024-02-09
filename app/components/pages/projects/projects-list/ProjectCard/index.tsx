@@ -32,7 +32,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
             onHoverStart={() => setIsHover(true)}
             onHoverEnd={() => setIsHover(false)}
             href={pathname + '/' + project.slug}
-            className={`relative flex w-full max-w-[360px] cursor-pointer flex-col gap-2 rounded-2xl border bg-[#060010] shadow-lg shadow-black/50 transition duration-300 ease-in ${
+            className={`relative flex h-full w-full max-w-[360px] cursor-pointer flex-col gap-2 rounded-2xl border bg-[#060010] shadow-lg shadow-black/50 transition duration-300 ease-in ${
                 isHover ? 'border-pink-500' : 'border-[#201138]'
             }`}
         >

@@ -32,6 +32,8 @@ const getPageData = async () => {
 
     const data = await fetchHygraphQuery<ProjectsPageData>(query);
 
+    console.log(data);
+
     return data;
 };
 
