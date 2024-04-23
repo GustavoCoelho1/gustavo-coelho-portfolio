@@ -69,14 +69,18 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
                     {project.shortDescription}
                 </span>
 
-                <div className="flex w-full flex-wrap gap-x-2 gap-y-3 lg:max-w-[90%]">
-                    {project.technologies.map((tech) => (
-                        <TechBadge
-                            key={`projects-${tech.name}`}
-                            icon={tech.iconSvg}
-                            name={tech.name}
-                        />
-                    ))}
+                <div className="flex w-full flex-wrap gap-x-2 gap-y-3 lg:max-w-[100%]">
+                    {project.technologies.map((tech, idx) => {
+                        if (idx <= 5) {
+                            return (
+                                <TechBadge
+                                    key={`projects-${tech.name}`}
+                                    icon={tech.iconSvg}
+                                    name={tech.name}
+                                />
+                            );
+                        }
+                    })}
                 </div>
             </div>
         </m.a>
