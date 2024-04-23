@@ -36,7 +36,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
                 isHover ? 'border-pink-500' : 'border-[#201138]'
             }`}
         >
-            <div className="relative flex h-[200px] w-full items-center overflow-hidden rounded-t-2xl pb-10">
+            <div className="relative flex h-[225px] w-full items-center overflow-hidden rounded-t-2xl pb-10">
                 <img
                     src={project.thumbnail.url}
                     className={`w-full bg-cover transition duration-300 ${
